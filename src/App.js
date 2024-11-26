@@ -1,25 +1,72 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Header from "./components/Header";
+import HeroSection from "./components/HeroSection";
+import MagazineSection from "./components/MagazineSection";
+import Footer from "./components/Footer";
+import FollowAlong from "./components/FollowAlong";
+import WhatToExpect from "./components/WhatToExpect";
+import About from "./pages/About";
+import QuizRefer from "./components/QuizRefer";
+import Quiz from "./pages/Quiz";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="font-sans bg-gray-100">
+        <Header />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <HeroSection />
+                <WhatToExpect />
+                <FollowAlong />
+                <MagazineSection />
+                <QuizRefer />
+                <About />
+              </>
+            }
+          />{" "}
+          <Route
+            path="/magazines"
+            element={
+              <>
+                <WhatToExpect />
+                <MagazineSection />
+              </>
+            }
+          />
+          <Route
+            path="/ask"
+            element={
+              <>
+                <FollowAlong />
+              </>
+            }
+          />
+          <Route
+            path="/meetme"
+            element={
+              <>
+                <About />
+              </>
+            }
+          />
+          <Route
+            path="/quiz"
+            element={
+              <>
+                <Quiz />
+              </>
+            }
+          />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;
