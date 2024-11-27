@@ -8,7 +8,7 @@ import BGMag from "../media/BGMag.png";
 const HeroSection = () => {
   return (
     <section
-      className="relative h-screen bg-cover bg-center flex items-center justify-center border-b-8 border-hotPink"
+      className="relative pt-20 pb-24 bg-cover bg-center flex items-center justify-center border-b-8 border-hotPink"
       style={{ backgroundImage: `url(${BGMag})` }} // Background image
     >
       {/* Fade-in overlay to darken the background image */}
@@ -18,7 +18,7 @@ const HeroSection = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
       />
-      <div className="relative z-10 flex flex-col lg:flex-row items-center justify-center text-pink-700 px-6 sm:px-10 md:px-20 w-full">
+      <div className="relative z-10 flex flex-col lg:flex-row items-center justify-center text-pink-700 sm:px-10 md:px-20 w-full">
         {/* Image Section */}
         <motion.div
           className="flex-shrink-0 mb-6 lg:mb-0 lg:mr-8"
@@ -29,7 +29,7 @@ const HeroSection = () => {
           {/* Hero image with circular border */}
           <img
             src={Jade1}
-            alt="Hero Image"
+            alt="Hero"
             className="w-72 h-72 sm:w-96 sm:h-96 rounded-full object-cover border-8 border-hotPink"
           />
 

@@ -1,7 +1,10 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <motion.header
       className="bg-hotPink p-6 text-white font-serif"
@@ -9,14 +12,25 @@ const Header = () => {
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      {/* Header title */}
-      <h1 className="text-4xl font-bold">Twenty One Magazine</h1>
+      {/* Header title with toggle button */}
+      <div className="flex justify-between items-center">
+        <h1 className="text-4xl font-bold">Twenty One Magazine</h1>
+        <button
+          className="text-3xl lg:hidden focus:outline-none"
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Toggle navigation"
+        >
+          ☰
+        </button>
+      </div>
 
       {/* Navigation menu */}
-      <nav className="mt-4">
-        {/* The menu items are wrapped in an unordered list */}
-        <ul className="flex flex-wrap justify-center space-x-12 text-xl font-bold">
-          {/* Each list item has a link to different sections */}
+      <nav>
+        <ul
+          className={`mt-4 lg:flex lg:space-x-10 text-xl font-bold transition-all duration-300 ${
+            menuOpen ? "block" : "hidden lg:block"
+          }`}
+        >
           <li>
             <Link to="/" className="hover:text-yellow-400">
               Home

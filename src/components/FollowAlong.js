@@ -79,10 +79,7 @@ const FollowAlong = () => {
           {" "}
           {/* Reference to the video player section */}
           {activeVideo ? (
-            <div
-              className="relative"
-              style={{ paddingBottom: "50.25%" /* 16:9 Aspect Ratio */ }}
-            >
+            <div className="relative pb-96 pt-96">
               <iframe
                 key={activeVideo} // Add the key here to force re-render of iframe
                 src={`${activeVideo}?playsinline=1&autoplay=1&hide_related=1`} // Embed with autoplay enabled (no mute)
