@@ -1,26 +1,66 @@
-# Big Sister Magazine Website
+# Twenty One Magazine
 
-Welcome to the **Big Sister Magazine Website**, a fun and interactive platform where young girls can receive empowering advice, download monthly magazines, and engage with the community by submitting their own advice and experiences.
+## Description
 
-This project is built using **React**, **Tailwind CSS**, and **Framer Motion** for animations, with a simple form to collect **User-Generated Content** (UGC) and submissions for future magazine issues.
+Features a fun, girly design and includes interactive elements like a quiz that displays results upon submission. It also incorporates a functional TikTok-style media player, showcasing strong UI design and interactive development skills.
 
-## Features
+## Purpose
 
-- **Hero Section:** An eye-catching introduction with hover animations and dynamic scroll effects.
-- **Magazine Section:** Display of the latest issues with download links.
-- **Ask Big Sister:** A Google Form integration for users to submit questions or seek advice.
-- **Animations:** Interactive hover and scroll-based animations powered by **Framer Motion**.
-- **Responsive Design:** Mobile-friendly layout built with **Tailwind CSS**.
+This application is a fun, interactive portfolio website that highlights my skills in UI design and interactive development. With a playful, girly design, it includes engaging elements such as a quiz that displays results upon submission and a TikTok-style media player for an immersive multimedia experience. The website showcases my ability to create visually appealing and functional interfaces, while also offering a delightful user experience through animations and personalized interactions, like a bee following the cursor. It serves as both a professional portfolio and a showcase of my creativity and technical expertise.
 
-## Technologies Used
+## Key Features
 
-- **React**: JavaScript library for building user interfaces.
-- **Tailwind CSS**: Utility-first CSS framework for styling.
-- **Framer Motion**: Library for animations and transitions.
-- **Firebase (Optional)**: To store and manage user-generated content in real-time.
+- **Girly Design**
+- **Media Player**
+- **Quiz**
+- **Downloadable Magazine Editions**
+- **Contact Option**
 
-## Installation
+---
+
+## Installation and Setup
 
 ### Prerequisites
 
-- Node.js (version 14 or higher) and npm should be installed on your machine.
+- Node.js (v12 or higher)
+- MongoDB (local or cloud instance like MongoDB Atlas)
+
+### Clone the Repository
+
+`code`
+git clone https://github.com/your-username/boombox.git
+
+## Setup
+
+**Open a new terminal and navigate to the frontend directory:**
+
+`code`
+cd twenty-one-magazine
+
+**Install the frontend dependencies:**
+
+`code`
+npm install
+
+**Start the frontend server:**
+
+`code`
+npm start
+
+## Tech Stack
+
+- **React**
+- **CSS**
+- **JavaScript**
+
+## Contributing
+
+- **Fork the repository**
+- **Create a new branch**
+- **Commit your changes**
+- **Push to the branch**
+- **Open a Pull Request**
+
+## Lisence
+
+This project is licensed under the MIT License.
